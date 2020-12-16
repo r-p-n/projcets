@@ -1,0 +1,64 @@
+
+
+BoxLayout:
+    orientation: "horizontal"
+
+    BoxLayout:
+        orientation: "vertical"
+
+        Button:
+            id: list_required
+            text: "List Required"
+            on_release: app.create_buttons("r")
+        Button:
+            id: list_complete
+            text: "List Complete"
+            on_release: app.create_buttons("c")
+        Label:
+            id: add_new_book
+            text: "Add New Book..."
+            size_hint_y: 1.2
+        Label:
+            id: title_label
+            text: "Title:"
+            size_hint_y: 0.8
+        TextInput:
+            focus: True
+            id: title_input
+            size_hint_y: 0.8
+            multiline: False
+            write_tab: False
+        Label:
+            id: author_label
+            text: "Author:"
+            size_hint_y: 0.8
+        TextInput:
+            id: author_input
+            size_hint_y: 0.8
+            value: ""
+            multiline: False
+            write_tab: False
+        Label:
+            id: pages_label
+            text: "Pages:"
+            size_hint_y: 0.8
+        TextInput:
+            id: pages_input
+            size_hint_y: 0.8
+            multiline: False
+            write_tab: False
+        Button:
+            id: add_item
+            text: "Add item"
+            size_hint_y: 0.8
+            on_release: app.add_book(title_input.text, author_input.text, pages_input.text)
+        Button:
+            id: clear
+            text: "Clear"
+            size_hint_y: 0.8
+            on_release: app.clear_text()
+
+    BoxLayout:
+        orientation: "vertical"
+        size_hint_x: 3.2
+        id: books

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MeasurementConverter</string>
+    <string name="button_settings">SETTINGS</string>
+    <string name="button_imperial">INCHES</string>
+    <string name="button_converter">CONVERT</string>
+    <string name="to">TO</string>
+    <string name="input">Enter number…</string>
+    <string name="settings_label">SETTINGS</string>
+    <string name="metric_to_imperial">Metric to Imperial</string>
+    <string name="imperial_to_metric">Imperial to Metric</string>
+    <string name="conversion_type">Conversion Type</string>
+    <string name="decimal_precision">Decimal Precision</string>
+    <string name="back">BACK</string>
+    <string-array name="spinner_metric">
+        <item>MM</item>
+        <item>CM</item>
+        <item>M</item>
+        <item>KM</item>
+    </string-array>
+    <string-array name="spinner_imperial">
+        <item>IN</item>
+        <item>FT</item>
+        <item>YD</item>
+        <item>MI</item>
+    </string-array>
+
+</resources>

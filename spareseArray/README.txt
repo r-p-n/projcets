@@ -1,0 +1,3 @@
+it's a sparese array data structure...
+
+I did this like two years ago, so it's probably not the best

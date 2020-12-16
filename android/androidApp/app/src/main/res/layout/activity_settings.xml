@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:onClick="backOnClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conversion_type"
+        android:textSize="20sp"
+        android:padding="10dp" />
+
+    <RadioGroup
+        android:id="@+id/conversionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:checkedButton="@+id/metricToImperial">
+        <RadioButton
+            android:id="@+id/metricToImperial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/metric_to_imperial"/>
+        <RadioButton
+            android:id="@+id/imperialToMetric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imperial_to_metric"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decimal_precision"
+        android:textSize="20sp"
+        android:padding="10dp" />
+
+    <SeekBar
+        android:id="@+id/precision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="9"/>
+
+</LinearLayout>
